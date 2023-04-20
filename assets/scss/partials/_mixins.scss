@@ -1,0 +1,19 @@
+@mixin textSmall {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 40px;
+}
+@mixin textMedium {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+@mixin textLarge {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+    color: $primary-color;
+    text-align: center;
+}
