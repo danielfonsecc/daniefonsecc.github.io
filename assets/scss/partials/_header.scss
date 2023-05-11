@@ -1,9 +1,14 @@
 header {
     background: $primary-color;
-    height: 50px;
+    height: rem(50);
     text-align: center;
-    color: #fff;
+    color: $secondary-color;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    hi {
+      color: white;
+    }
+
   }
