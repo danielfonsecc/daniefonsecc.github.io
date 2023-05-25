@@ -6,9 +6,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    hi {
+    a {
       color: white;
+      text-decoration: none;
+      &.active {
+        text-decoration: underline;
+      }
+    }
+
+    h1 {
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      width: 50vw;
+      justify-content: space-around;
+      text-decoration: none;
     }
 
   }

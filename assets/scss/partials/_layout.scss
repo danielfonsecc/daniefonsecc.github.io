@@ -3,6 +3,15 @@ body {
     flex-direction: column;
     margin: 0;
     height: 100svh;
+    &.sobre {
+      background: tomato;
+    }
+    &.contacto {
+      background: yellow;
+    }
+    &.home {
+      background: lightblue;
+    }
   }
   h1 {
     @include textLarge;
