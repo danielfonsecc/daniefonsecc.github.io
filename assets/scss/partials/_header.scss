@@ -20,8 +20,15 @@ header {
     }
 
     .btn--toggle-menu {
+      background: transparent;
+      border: none;
+      display: content;
+      cursor: pointer;
       @media (min-width: $medium) {
         display: none;
+      }
+      svg {
+        stroke: #fff;
       }
     }
 
