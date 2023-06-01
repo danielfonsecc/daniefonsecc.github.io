@@ -12,4 +12,13 @@ for(var i = 0; i < anchor.length; i++) {
     } else {
         document.body.classList.add("home");
     }
-    }
+
+}
+
+var btnToggleMenu = document.querySelector(".btn--toggle-menu");
+
+function toggleMenu() {
+    var mainNav = document.querySelector("#main-navigation");
+    mainNav.classList.toggle("menu-is-open");
+}
+btnToggleMenu.addEventListener("click", toggleMenu);

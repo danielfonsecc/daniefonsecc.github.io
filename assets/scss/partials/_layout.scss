@@ -14,7 +14,17 @@ body {
     }
   }
   h1 {
+    @include textMedium;
+  }
+  h2 {
+    @include textXLarge;
+  }
+  h3 {
     @include textLarge;
+  }
+  h4,
+  h5 {
+    @include textMedium;
   }
   p {
     @include textSmall;
