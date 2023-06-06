@@ -52,7 +52,7 @@ body {
     @media (min-width: $medium) {
       max-width: 100%;
       padding: 30px;
-      }
+    }
     @media (min-width: $large) {
       max-width: 1130px;
     }
@@ -69,14 +69,14 @@ body {
   .column:not(:last-child) {
     margin-bottom: 30px;
   }
-  figure {
+  .figure-home {
     margin: 0;
     position: relative;
     background: #fff;
     overflow: hidden;
     padding-bottom: ratio(16, 9);
   }
-  img {
+  .img-home {
     max-width: 100%;
     position: absolute;
     top: 0;
