@@ -20,10 +20,17 @@ body {
     @include textMedium;
   }
   h2 {
-    @include textXLarge;
+    @include textLarge;
+    @media (min-width: $small) {
+      @include textXLarge;
+    }
+    text-transform: uppercase;
   }
   h3 {
-    @include textLarge;
+    @include textMedium;
+    @media (min-width: $small) {
+      @include textLarge;
+    }
   }
   h4,
   h5 {
@@ -34,7 +41,7 @@ body {
   }
   header,
   footer {
-    @include textMedium;
+    @include textXSmall;
   }
   
   /* START MAIN */
@@ -72,18 +79,32 @@ body {
   .figure-home {
     margin: 0;
     position: relative;
-    background: #fff;
     overflow: hidden;
     padding-bottom: ratio(16, 9);
-  }
-  .img-home {
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    p {
+      position: absolute;
+      bottom: -15px;
+      width: 100%;
+      @include textMedium;
+      @media (max-width: $small) {
+        bottom: -20px;
+        @include textSmall;
+      }
+      @media (min-width: $medium) {
+        bottom: -25px;
+        @include textSmall;
+      }
+      object-fit: contain;
+    }
+    .img-home {
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
   @media (min-width: $medium) {
     .flex-grid {
@@ -96,5 +117,12 @@ body {
     }
     .column:not(:last-child) {
       margin-bottom: 0;
+    }
+  }
+  .contact-p {
+    @include textMedium;
+    @media (min-width: $small) {
+      @include textLarge;
+      padding-top: 32px;
     }
   }
