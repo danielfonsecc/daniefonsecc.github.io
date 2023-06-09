@@ -122,7 +122,7 @@ body {
   .contact-p {
     @include textMedium;
     @media (min-width: $small) {
-      @include textLarge;
+      @include textMedium;
       padding-top: 32px;
     }
   }
